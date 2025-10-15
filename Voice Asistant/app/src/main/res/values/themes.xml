@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.VoiceChatApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#8A2BE2</item> <!-- Purple -->
+        <item name="colorPrimaryVariant">#4B0082</item> <!-- Deep Purple -->
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#BA68C8</item>
+        <item name="android:windowBackground">#121212</item> <!-- Dark background -->
+        <item name="android:textColorPrimary">#EDE7F6</item> <!-- Light Lavender -->
+    </style>
+</resources>

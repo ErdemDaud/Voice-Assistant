@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/voice_overlay_bg"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Pulsating Circle -->
+        <View
+            android:id="@+id/pulseCircle"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/pulse_circle"
+            android:layout_gravity="center"
+            android:elevation="8dp" />
+
+        <!-- Real-time Speech Display -->
+        <TextView
+            android:id="@+id/tvSpeechText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listening..."
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="48dp"
+            android:paddingHorizontal="32dp"
+            android:minHeight="80dp"
+            android:maxLines="4"
+            android:lineSpacingExtra="4dp"
+            android:alpha="0.95"
+            android:fontFamily="sans-serif-light" />
+
+        <!-- Subtle hint text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap anywhere to cancel"
+            android:textSize="14sp"
+            android:textColor="#BBBBBB"
+            android:layout_marginTop="32dp"
+            android:alpha="0.7" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Top bar with title and settings -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Voice Assistant"
+            android:textSize="22sp"
+            android:textColor="#EDE7F6"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_manage"
+            android:contentDescription="Settings"
+            app:tint="#EDE7F6"
+            android:padding="12dp" />
+
+    </RelativeLayout>
+
+    <!-- Chat area -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="always"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Message input + Send -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/chat_input_bg"
+        android:elevation="8dp">
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Type something..."
+            android:textColorHint="#888888"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:inputType="textMultiLine"
+            android:maxLines="4" />
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#8A2BE2"
+            android:background="@drawable/send_button_bg"
+            android:src="@android:drawable/ic_menu_send"
+            android:contentDescription="Send"
+            app:tint="#FFFFFF"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+    <!-- Speak + Show Notes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnSpeak"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="🎤 Speak"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#673AB7"
+            android:elevation="4dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnShowNotes"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="📋 Show Notes"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9575CD"
+            android:elevation="4dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</LinearLayout>

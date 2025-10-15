@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Server Settings"
+            android:textSize="28sp"
+            android:textColor="#EDE7F6"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Current IP Display -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Server IP"
+            android:textSize="16sp"
+            android:textColor="#B39DDB"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvCurrentIp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10.64.195.116:5000"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/chat_input_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Auto-discover section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auto-Discovery"
+            android:textSize="16sp"
+            android:textColor="#B39DDB"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Automatically find your server on the network"
+            android:textSize="14sp"
+            android:textColor="#999999"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnAutoDiscover"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🔍 Auto-Discover Server"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#673AB7"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Manual IP entry section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manual Configuration"
+            android:textSize="16sp"
+            android:textColor="#B39DDB"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter server IP address manually"
+            android:textSize="14sp"
+            android:textColor="#999999"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etServerIp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Example: 192.168.1.100"
+            android:textColorHint="#888888"
+            android:textColor="#000000"
+            android:background="@drawable/chat_input_bg"
+            android:padding="16dp"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etServerPort"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Port (default: 5000)"
+            android:textColorHint="#888888"
+            android:textColor="#000000"
+            android:background="@drawable/chat_input_bg"
+            android:padding="16dp"
+            android:inputType="number"
+            android:text="5000"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="💾 Save Settings"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9575CD"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnTestConnection"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🔌 Test Connection"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Status display -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#FFD700"
+            android:gravity="center"
+            android:padding="12dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>
