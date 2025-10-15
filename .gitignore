@@ -129,11 +129,9 @@ wheels/
 *.egg
 MANIFEST
 
-# Qodo (formerly Codium AI)
+# IDE Extensions
 .qodo/
 .codiumai/
-
-# Claude Code
 .claude/
 
 # IDE - VSCode
