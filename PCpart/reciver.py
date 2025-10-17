@@ -48,7 +48,7 @@ INITIAL_PROMPT = {
         "- For alarm requests: Output ONLY the XX1 command, no additional text\n"
         "- For normal conversation: Respond naturally and helpfully\n"
         "- For note requests: Output ONLY the XX2 command with the note content\n"
-        " -For note requests: Start always and always with XX2 followed by a space and then the note content\n"
+        " -For note requests: Your respond have to start with XX2, do not use XX2 after the note explanation use it directly first command\n"
         "- NEVER create alarms for past times - always verify the calculated time is after current time\n"
         "- Pay careful attention to AM/PM, today/tomorrow, and day boundaries (after midnight)\n"
     )
