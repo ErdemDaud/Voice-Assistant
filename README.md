@@ -2,7 +2,7 @@
 
 A local voice assistant powered by LLaMA 3.1 for daily task management. All conversations include timestamps for accurate time-based operations like alarms and reminders. The system runs entirely on your local network for complete privacy.
 
-**[Screenshot: Main chat interface]**
+![Main chat interface](screenshots/1.jpg)
 
 ## Features
 
@@ -12,7 +12,7 @@ A local voice assistant powered by LLaMA 3.1 for daily task management. All conv
 - Google Assistant-inspired UI with pulsating animations
 - Both voice and text input supported
 
-**[Screenshot: Voice recording dialog]**
+![Voice recording dialog](screenshots/8.jpg)
 
 ### Smart Alarm System
 - Natural language alarm setting ("wake me up in 30 minutes", "set alarm for tomorrow at 8 AM")
@@ -22,7 +22,7 @@ A local voice assistant powered by LLaMA 3.1 for daily task management. All conv
 
 **Benefits:** Never worry about time confusion - the AI always knows the current time and calculates alarms accurately.
 
-**[Screenshot: Alarm ringing screen]**
+![Alarm ringing screen](screenshots/6.jpg)
 
 ### Note Taking
 - Voice or text note creation
@@ -30,7 +30,7 @@ A local voice assistant powered by LLaMA 3.1 for daily task management. All conv
 - Edit, delete, and export notes to text file
 - Persistent local storage
 
-**[Screenshot: Notes screen]**
+![Notes screen](screenshots/5.jpg)
 
 ### Privacy-First Design
 - 100% local operation - no cloud services
@@ -44,7 +44,7 @@ A local voice assistant powered by LLaMA 3.1 for daily task management. All conv
 - Connection testing built-in
 - Settings persist across sessions
 
-**[Screenshot: Settings screen]**
+![Settings screen](screenshots/9.jpg)
 
 ## System Requirements
 
